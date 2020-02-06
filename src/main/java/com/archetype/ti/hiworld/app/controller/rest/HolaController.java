@@ -45,7 +45,6 @@ public class HolaController {
 	}
 	
 	@PutMapping
-	@ResponseStatus(HttpStatus.CREATED)
 	public Saludo actualizaSaludo(@Valid @RequestBody Saludo saludo) {
 		return saludosService.actualizarSaludo(saludo);
 	}
